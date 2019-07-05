@@ -1,16 +1,20 @@
-# Uber-Like-Cab-Service
-Android App with PHP backend and MySQL Database
+# Uber Like Cab Service
+This project is an Uber like Android app with php backend. It allows you to book the nearest available cab. Driver app is also present in the repo along with the server code.
 
-##Features
+## Prerequisites
+1. Google Maps API key.
+2. OneSignal API key.
 
-● Easy Registration that enables users to register and use this app with their mobiles
+## STEP 1
+```git clone https://github.com/AnupKumarPanwar/Uber-Like-Cab-Service.git```
 
-● Google places and maps can be used as an indicator for pickup and drop places using real-time tracking
+## STEP 2
+1. Open the User App in Android Studio.
+2. Put your GOOGLE_MAPS_API_KEY in `strings.xml`
+3. Repeat the same process in Driver App.
+4. In Driver App, also replace ONE_SIGNAL_APP_ID in build.gradle (module:app) with your id.
 
-● Users can calculate the fare easily using this app
-
-● The tracking feature is made available on the real-time basis. You can check who your driver is, where is at present etc. using this app
-
-● The app also contains OTP feature
-
-
+## STEP 3
+1. Deploy the php server.
+2. Import the `database.sql` file in MySQL.
+3. Replace the network call urls in the Android App code with your server url.
